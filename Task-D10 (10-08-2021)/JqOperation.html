@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Arithmetic operations in JQ</title>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <center><h1 style="color:yellow">Java Query Arthmetic Operations</h1></center>
+    <style>
+        .bg {
+            background-image: url('bg3.jfif');
+            font-size: larger;
+            height: 100%;
+            width:100%;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            color: white;
+            text-align: center;         
+        }
+    </style>
+    
+</head>
+<body class="bg">
+
+    The value of x is <input type="text" id="xValue" placeholder="Enter first number" /><br />
+    The value of y is <input type="text" id="yValue" placeholder="Enter second number" /><br />
+    <script>
+        document.write("<br>");
+        $(document).ready(function () {
+            $("#btnAdd").click(function () {
+                Add();
+            });
+            $("#btnSubtract").click(function () {
+                Subtract();
+            })
+            $("#btnMultiply").click(function () {
+                Multiply();
+            })
+            $("#btnDivide").click(function () {
+                Divide();
+            })
+        });
+        function Add() {
+            var x = parseInt($("#xValue").val());
+            var y = parseInt($("#yValue").val());
+            window.alert("The addition of x and y is " + (x + y) + ".");
+        }
+        function Subtract() {
+            var x = parseInt($("#xValue").val());
+            var y = parseInt($("#yValue").val());
+            window.alert("The subtraction of x and y is " + (x - y) + ".");
+        }
+        function Multiply() {
+            var x = parseInt($("#xValue").val());
+            var y = parseInt($("#yValue").val());
+            window.alert("The multiplication of x and y is " + (x * y) + ".");
+        }
+        function Divide() {
+            var x = parseInt($("#xValue").val());
+            var y = parseInt($("#yValue").val());
+            window.alert("The division of x and y is " + (x / y) + ".");
+        }
+    </script>
+
+    <input type="button" id="btnAdd" value="Add" />
+    <input type="button" id="btnSubtract" value="Subtract" />
+    <input type="button" id="btnMultiply" value="Multiply" />
+    <input type="button" id="btnDivide" value="Divide" />
+
+</body>
+</html>
