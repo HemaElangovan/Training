@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+<body>
+    <form id="Edit" method="post" action=@Url.Action("EditDetails")>
+        Register No: <input type="text" name="txt_rno" value="@Model.Rows[0]["Rno"]" /> <br/><br/>
+        First Name : <input type="text" name="txt_fname" value="@Model.Rows[0]["FirstName"]" /> <br /><br />
+        Last Name  : <input type="text" name="txt_lname" value="@Model.Rows[0]["LastName"]" /><br /><br />
+        Age        : <input type="text" name="txt_age" value="@Model.Rows[0]["Age"]" /><br /><br />
+        Gender     : <input type="text" name="txt_gender" value="@Model.Rows[0]["Gender"]" /><br /><br />
+
+        <input type="submit" value="Submit" name="action" />
+        <input type="submit" value="Cancel" name="action" />
+    </form>
+</body>
+

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "InsertData";
+}
+
+<h2>InsertData</h2>
+<body>
+    <form id="InsertDetails" method="post" action=@Url.Action("InsertDetails")>
+        First Name: <input type="text" name="txt_fname" /> <br /><br />
+        Last Name : <input type="text" name="txt_lname" /> <br /><br />
+        Age       : <input type="text" name="txt_age" /> <br /><br />
+        Gender    : <input type="text" name="txt_gender" /> <br /><br />
+        <input type="submit" value="Submit" name="action" />
+        <input type="submit" value="Cancel" name="action" />
+    </form>
+</body>
+
